@@ -403,7 +403,7 @@ details[open] .plus{transform:rotate(45deg)}
 <div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
 <span style="font-size: 14px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #9A5230">Rezervacija</span>
 <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 60px; line-height: 1.04">Začnimo z <em>ogledom vaših prostorov.</em></h2>
-<p style="margin: 0; color: #4F5B55">Izberite termin. Pridemo k vam, fotografiramo prostore in vam pripravimo vizualizacije z našimi rastlinami.</p>
+<p style="margin: 0; color: #4F5B55">Pišite nam. Pridemo k vam, fotografiramo prostore in vam pripravimo vizualizacije z našimi rastlinami.</p>
 <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 12px">
 <button type="button" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; padding: 18px 22px; border-radius: 6px; font-family: Inter, sans-serif; color: #1C2B24; cursor: pointer; min-height: 64px; box-sizing: border-box; background: #FFFFFF; border: 2px solid #24453A;">
 <span style="display: flex; flex-direction: column; gap: 2px; text-align: left"><span style="font-size: 17px; font-weight: 600">Ogled pisarne</span><span style="font-size: 14px; color: #4F5B55">45 minut, pri vas</span></span>
@@ -416,10 +416,27 @@ details[open] .plus{transform:rotate(45deg)}
 </div>
 </div>
 <div style="flex: 1 1 480px; min-width: 0; background: #FFFFFF; border: 1px solid #DDE2DA; border-radius: 6px; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
-<span style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 600; line-height: 1.1">Ogled pisarne</span>
-<p style="margin: 0; color: #4F5B55">Pišite nam, katera termina vam ustrezata. Odgovorimo vam s predlogom za ogled.</p>
-<a class="btn-primary" href="mailto:contact@atriumverde.com?subject=Ogled%20pisarne%20%E2%80%93%20Atrium%20verde" style="align-self: flex-start; background: #24453A; color: #FFFFFF; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-size: 16px; font-weight: 600; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Pošljite povpraševanje</a>
-<span style="font-size: 14px; color: #4F5B55">ali neposredno na <a href="mailto:contact@atriumverde.com">contact@atriumverde.com</a></span>
+<div style="display: flex; flex-direction: column; gap: 22px;">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 600; line-height: 1.1">Pošljite povpraševanje</span>
+<form style="display: flex; flex-direction: column; gap: 16px">
+<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display: none">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">Ime in priimek *<input name="name" required="" autocomplete="name" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">Podjetje<input name="company" autocomplete="organization" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">E-pošta *<input name="email" type="email" required="" autocomplete="email" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">Telefon<input name="phone" type="tel" autocomplete="tel" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px"></label>
+</div>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">Vrsta povpraševanja<select name="type" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px"><option value="office">Ogled pisarne</option><option value="event">Projekt dogodka</option><option value="flowers">Cvetje in sezone</option><option value="other">Drugo</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">Sporočilo<textarea name="message" rows="4" placeholder="Velikost prostorov, želeni termin, datum dogodka …" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px; resize: vertical"></textarea></label>
+<label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: #4F5B55; line-height: 1.5"><input type="checkbox" name="consent" required="" style="margin-top: 3px; width: 18px; height: 18px; flex: none">Strinjam se, da Atrium verde uporabi moje podatke izključno za odgovor na to povpraševanje. *</label>
+<button class="btn-primary" type="submit" style="align-self: flex-start; background: #24453A; color: #FFFFFF; border: none; cursor: pointer; padding: 16px 28px; border-radius: 999px; font-family: Inter, sans-serif; font-size: 16px; font-weight: 600; min-height: 52px">Pošljite povpraševanje</button>
+<span role="alert" style="display: none;">Pošiljanje ni uspelo. Poskusite znova ali pišite na <a href="mailto:contact@atriumverde.com">contact@atriumverde.com</a></span>
+</form>
+</div>
+<div role="status" style="display: none;">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 600; line-height: 1.1; color: #24453A">Hvala, povpraševanje smo prejeli.</span>
+<p style="margin: 0; color: #4F5B55">Odgovorimo vam v najkrajšem možnem času s predlogom termina.</p>
+</div>
 </div>
 </section>
 
@@ -836,7 +853,7 @@ details[open] .plus{transform:rotate(45deg)}
 <div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
 <span style="font-size: 14px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #9A5230">Rezervacija</span>
 <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 60px; line-height: 1.04">Začnimo z <em>ogledom vaših prostorov.</em></h2>
-<p style="margin: 0; color: #4F5B55">Izberite termin. Pridemo k vam, fotografiramo prostore in vam pripravimo vizualizacije z našimi rastlinami.</p>
+<p style="margin: 0; color: #4F5B55">Pišite nam. Pridemo k vam, fotografiramo prostore in vam pripravimo vizualizacije z našimi rastlinami.</p>
 <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 12px">
 <button type="button" onClick="{{ pickOffice }}" style="{{ officeStyle }}">
 <span style="display: flex; flex-direction: column; gap: 2px; text-align: left"><span style="font-size: 17px; font-weight: 600">Ogled pisarne</span><span style="font-size: 14px; color: #4F5B55">45 minut, pri vas</span></span>
@@ -849,10 +866,27 @@ details[open] .plus{transform:rotate(45deg)}
 </div>
 </div>
 <div style="flex: 1 1 480px; min-width: 0; background: #FFFFFF; border: 1px solid #DDE2DA; border-radius: 6px; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
-<span style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 600; line-height: 1.1">{{ bookingTitle }}</span>
-<p style="margin: 0; color: #4F5B55">Pišite nam, katera termina vam ustrezata. Odgovorimo vam s predlogom za ogled.</p>
-<a class="btn-primary" href="{{ mailHref }}" style="align-self: flex-start; background: #24453A; color: #FFFFFF; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-size: 16px; font-weight: 600; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Pošljite povpraševanje</a>
-<span style="font-size: 14px; color: #4F5B55">ali neposredno na <a href="mailto:contact@atriumverde.com">contact@atriumverde.com</a></span>
+<div style="{{ formWrap }}">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 600; line-height: 1.1">Pošljite povpraševanje</span>
+<form onSubmit="{{ onSend }}" style="display: flex; flex-direction: column; gap: 16px">
+<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display: none">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">Ime in priimek *<input name="name" required autocomplete="name" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">Podjetje<input name="company" autocomplete="organization" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">E-pošta *<input name="email" type="email" required autocomplete="email" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">Telefon<input name="phone" type="tel" autocomplete="tel" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px"></label>
+</div>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">Vrsta povpraševanja<select name="type" value="{{ kindValue }}" onChange="{{ onType }}" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px"><option value="office">Ogled pisarne</option><option value="event">Projekt dogodka</option><option value="flowers">Cvetje in sezone</option><option value="other">Drugo</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1C2B24">Sporočilo<textarea name="message" rows="4" placeholder="Velikost prostorov, želeni termin, datum dogodka …" style="width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #C9D2C8; border-radius: 6px; background: #FFFFFF; font-family: Inter, sans-serif; font-size: 16px; color: #1C2B24; min-height: 48px; resize: vertical"></textarea></label>
+<label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: #4F5B55; line-height: 1.5"><input type="checkbox" name="consent" required style="margin-top: 3px; width: 18px; height: 18px; flex: none">Strinjam se, da Atrium verde uporabi moje podatke izključno za odgovor na to povpraševanje. *</label>
+<button class="btn-primary" type="submit" style="align-self: flex-start; background: #24453A; color: #FFFFFF; border: none; cursor: pointer; padding: 16px 28px; border-radius: 999px; font-family: Inter, sans-serif; font-size: 16px; font-weight: 600; min-height: 52px">{{ sendLabel }}</button>
+<span role="alert" style="{{ errStyle }}">Pošiljanje ni uspelo. Poskusite znova ali pišite na <a href="mailto:contact@atriumverde.com">contact@atriumverde.com</a></span>
+</form>
+</div>
+<div role="status" style="{{ doneWrap }}">
+<span style="font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 600; line-height: 1.1; color: #24453A">Hvala, povpraševanje smo prejeli.</span>
+<p style="margin: 0; color: #4F5B55">Odgovorimo vam v najkrajšem možnem času s predlogom termina.</p>
+</div>
 </div>
 </section>
 
@@ -996,7 +1030,28 @@ class Component extends DCLogic {
       pickOffice: function () { self.setState({ kind: 'office' }); },
       pickEvent: function () { self.setState({ kind: 'event' }); },
       bookingTitle: kind === 'office' ? 'Ogled pisarne' : 'Projekt dogodka',
-      mailHref: 'mailto:contact@atriumverde.com?subject=' + encodeURIComponent((kind === 'office' ? 'Ogled pisarne' : 'Projekt dogodka') + ' – Atrium verde'),
+      formWrap: (this.state.sent ? 'display: none;' : 'display: flex; flex-direction: column; gap: 22px;'),
+      doneWrap: (this.state.sent ? 'display: flex; flex-direction: column; gap: 12px; padding: 12px 0;' : 'display: none;'),
+      errStyle: (this.state.err ? 'display: block; font-size: 14px; color: #9A5230;' : 'display: none;'),
+      sendLabel: (this.state.sending ? 'Pošiljanje …' : 'Pošljite povpraševanje'),
+      kindValue: kind,
+      onType: function (e) { self.setState({ kind: e.target.value }); },
+      onSend: function (e) {
+        e.preventDefault();
+        if (self.state.sending) return;
+        var fd = new FormData(e.target), data = {};
+        fd.forEach(function (v, k) { data[k] = v; });
+        data.access_key = '118124e2-8d82-4090-a6ea-1cd9d1e12db3';
+        data.subject = 'Atrium verde – ' + e.target.type.options[e.target.type.selectedIndex].text + ' – ' + (data.company || data.name);
+        data.from_name = 'atriumverde.com';
+        data.replyto = data.email;
+        data.language = 'sl';
+        self.setState({ sending: true, err: false });
+        fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) })
+          .then(function (r) { return r.json(); })
+          .then(function (j) { self.setState(j && j.success ? { sending: false, sent: true } : { sending: false, err: true }); })
+          .catch(function () { self.setState({ sending: false, err: true }); });
+      },
       confirmLabel: 'Potrdite termin',
       days: days
     };
